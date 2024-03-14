@@ -1,0 +1,10 @@
+name: My_first_workflow
+on: [push]
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        uses: actions/checkout@v3
+      - name: step2
+        run: echo "Hey yall"
